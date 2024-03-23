@@ -5,9 +5,9 @@ Agents are large language models that are equipped with tools (e.g. search engin
 We will be creating a basic agent in LangChain using an open-source model called Mixtral 8x7B released by Mistral AI. Unlike other models such as Llama2, Mixtral 8x7B has a Mixture-of-Experts (MoE) architecture which replaces the traditional feed-forward network layers with 8 experts and a router that decides which tokens are sent to experts for processing. The main advantage of MoE models is that not all experts are activated during inferencing meaning very efficient processing (faster and less computer resources needed than a large model like 70B). We will be using Amazon SageMaker or RunPod to deploy a quantized Mixtral 8x7B due to the relatively large GPU compute requirements (~32 GB) of the model.
 
 Given a task, our Mixtral agent will:
-•	create a plan of action to complete the task 
-•	automatically search for webpages (DuckDuckGo search)
-•	automatically search for YouTube videos (YouTube search) 
+- create a plan of action to complete the task 
+- automatically search for webpages (DuckDuckGo search)
+- automatically search for YouTube videos (YouTube search) 
 
 Results:
 The agent performed well returning relevant results when given an appropriate query. For example, when asked "Give me a link to 2 cat videos", it responded, "To answer this question, I need to find 2 cat videos on YouTube. I will use the YouTube search tool to find these videos… I now know the final answer. Final Answer: URL..."
