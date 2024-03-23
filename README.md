@@ -9,12 +9,12 @@ Given a task, our Mixtral agent will:
 - automatically search for webpages (DuckDuckGo search)
 - automatically search for YouTube videos (YouTube search) 
 
-Results:
+## Results:
 The agent performed well returning relevant results when given an appropriate query. For example, when asked "Give me a link to 2 cat videos", it responded, "To answer this question, I need to find 2 cat videos on YouTube. I will use the YouTube search tool to find these videos… I now know the final answer. Final Answer: URL..."
 
 The inferencing time was also acceptable with an average of ~5 seconds per run and 93.41 tokens per second token for reading the prompt tokens (prompt eval) and 42.41 tokens per second for generating response (eval time) using the RunPod instance.
 
-Python libraries/tools: LangChain, AWS, RunPod and 🤗
+## Python libraries/tools: LangChain, AWS, RunPod and 🤗
 
-Cloud computing resources: Amazon SageMaker g5.12xlarge instance or RunPod: 1x RTX 5000 Ada 32 GB VRAM instance
+## Cloud computing resources: Amazon SageMaker g5.12xlarge instance or RunPod: 1x RTX 5000 Ada 32 GB VRAM instance
 
