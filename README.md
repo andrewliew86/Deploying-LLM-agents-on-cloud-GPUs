@@ -14,7 +14,7 @@ The agent performed well returning relevant results when given an appropriate qu
 
 The inferencing time was also acceptable with an average of ~5 seconds per run and 93.41 tokens per second token for reading the prompt tokens (prompt eval) and 42.41 tokens per second for generating response (eval time) using the RunPod instance.
 
-## Python libraries/tools: LangChain, AWS, RunPod and 🤗
-
-## Cloud computing resources: Amazon SageMaker g5.12xlarge instance or RunPod: 1x RTX 5000 Ada 32 GB VRAM instance
+## Notes: 
+- **Python libraries/tools**: LangChain, and 🤗
+- **Cloud computing resources**: Amazon SageMaker g5.12xlarge instance or RunPod: 1x RTX 5000 Ada 32 GB VRAM pod instance
 
